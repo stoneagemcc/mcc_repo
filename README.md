@@ -49,7 +49,7 @@ print(f'Wet-buld Temp. (T_wet): {T_wet:.2f} @ Humidity Ratio (w): {w:.4f} & Rel.
 Out: Wet-buld Temp. (T_wet): 16.26 @ Humidity Ratio (w): 0.0100 & Rel. Humidity (phi): 0.6850
 
 ### Get Dew-point Temp. (T_dew) from w:
-T_dew = get_T_dew
+T_dew = get_T_dew(w=0.01)
 
 
 ### Multiple Points
