@@ -64,7 +64,7 @@ phi = get_phi(T=T, w=w)
 plot(T=T, phi=phi)
 
 
-# Many Points
+### Many Points
 T = np.linspace(-10, 40, 51)
 
 phi = 0.5
