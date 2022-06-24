@@ -48,11 +48,15 @@ print(f'Wet-buld Temp. (T_wet): {T_wet:.2f} @ Humidity Ratio (w): {w:.4f} & Rel.
 
 Out: Wet-buld Temp. (T_wet): 16.26 @ Humidity Ratio (w): 0.0100 & Rel. Humidity (phi): 0.6850
 
-### Get Dew-point Temp. (T_dew) from w:
+### Visualization of State(s) marked with 'X':
+plot(T=20, w=0.01) 
+
+
+### Get Dew-point Temp. (T_dew) from Humidity Ratio (w):
 T_dew = get_T_dew(w=0.01)
 
 
-### Multiple Points
+### Multiple States
 import numpy as np
 
 T = np.array([20, 25, 35])
@@ -64,7 +68,7 @@ phi = get_phi(T=T, w=w)
 plot(T=T, phi=phi)
 
 
-### Many Points
+### Many States
 T = np.linspace(-10, 40, 51)
 
 phi = 0.5
