@@ -2,7 +2,7 @@
 psychrometrics conversion calculator &amp; visualization
 
 
-### Psychrometrics conversion - Find any states given any 2 states by get_*(state1, state2) function:
+### Psychrometrics conversion - Find any states given any 2 states by get_*(state1, state2) functions:
 T     : Dry-bulb Temperature [degC]
 
 w     : Humidity Ratio or Absolute Humidty [kg-water/kg-dry-air]
@@ -20,7 +20,7 @@ P     : atmospheric Pressure [kPa] (Default: 101.325 [kPa])
 
 T_dew : Dew-point Temperature [degC] (given w)
 
-(you must supply keyword arguments in get_*(state1, state2) function)
+(you must supply keyword arguments in get_*(state1, state2) functions)
 
 
 # Examples of Use:
@@ -47,6 +47,9 @@ T_wet = get_T_wet(w=w, phi=phi) # [degC]
 print(f'Wet-buld Temp. (T_wet): {T_wet:.2f} @ Humidity Ratio (w): {w:.4f} & Rel. Humidity (phi): {phi:.4f}')
 
 Out: Wet-buld Temp. (T_wet): 16.26 @ Humidity Ratio (w): 0.0100 & Rel. Humidity (phi): 0.6850
+
+### Get Dew-point Temp. (T_dew) from w:
+T_dew = get_T_dew
 
 
 ### Multiple Points
