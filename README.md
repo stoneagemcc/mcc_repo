@@ -35,7 +35,7 @@ w = get_w(T=T, phi=phi) # [kg-water/kg-dry-air]
 
 print(f'Humidity Ratio (w): {w:.4f} @ Temp. (T): {T:.2f} degC & Rel. Humidity (phi): {phi:.4f}')
 
-Out: Humidity Ratio (w): 0.0100 @ Temp. (T): 20.00 degC & Rel. Humidity (phi): 0.6850
+=> Humidity Ratio (w): 0.0100 @ Temp. (T): 20.00 degC & Rel. Humidity (phi): 0.6850
 
 ### (B)
 w = 0.01 # [kg-water/kg-dry-air]
@@ -44,9 +44,9 @@ phi = 0.685 # no unit
 
 T_wet = get_T_wet(w=w, phi=phi) # [degC]
 
-print(f'Wet-buld Temp. (T_wet): {T_wet:.2f} @ Humidity Ratio (w): {w:.4f} & Rel. Humidity (phi): {phi:.4f}')
+print(f'Wet-bulb Temp. (T_wet): {T_wet:.2f} @ Humidity Ratio (w): {w:.4f} & Rel. Humidity (phi): {phi:.4f}')
 
-Out: Wet-buld Temp. (T_wet): 16.26 @ Humidity Ratio (w): 0.0100 & Rel. Humidity (phi): 0.6850
+=> Wet-bulb Temp. (T_wet): 16.26 @ Humidity Ratio (w): 0.0100 & Rel. Humidity (phi): 0.6850
 
 ### Visualization of State(s) marked with 'X':
 plot(T=20, w=0.01) 
