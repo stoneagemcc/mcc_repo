@@ -23,12 +23,12 @@ from scipy.optimize import root
 if False:
     ### ------------ Functions for Use ------------ ###
     
-    get_T(*, w=None, phi=None, h=None, T_wet=None, v=None, P=P_0)
-    get_w(*, T=None, phi=None, h=None, T_wet=None, v=None, P=P_0)
-    get_phi(*, T=None, w=None, h=None, T_wet=None, v=None, P=P_0)
-    get_h(*, T=None, w=None, phi=None, T_wet=None, v=None, P=P_0)
-    get_T_wet(*, T=None, w=None, phi=None, h=None, v=None, P=P_0)
-    get_v(*, T=None, w=None, phi=None, h=None, T_wet=None, P=P_0)
+    get_T(w=None, phi=None, h=None, T_wet=None, v=None, P=P_0)
+    get_w(T=None, phi=None, h=None, T_wet=None, v=None, P=P_0)
+    get_phi(T=None, w=None, h=None, T_wet=None, v=None, P=P_0)
+    get_h(T=None, w=None, phi=None, T_wet=None, v=None, P=P_0)
+    get_T_wet(T=None, w=None, phi=None, h=None, v=None, P=P_0)
+    get_v(T=None, w=None, phi=None, h=None, T_wet=None, P=P_0)
     get_T_dew(w, P=P_0)
 
 
